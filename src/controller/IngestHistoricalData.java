@@ -6,6 +6,11 @@ import java.util.HashMap;
 import com.factory.DatabaseConnectionFactory;
 import com.model.FinancialData;
 
+/**
+ * Add historical financial data into database across years
+ * @author sudheendra
+ * @since 7/7/2018
+ */
 public class IngestHistoricalData {
 	DatabaseConnectionFactory dcf = null;
 	
