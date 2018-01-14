@@ -44,8 +44,7 @@ public class DataIngestion {
 		// TODO Auto-generated method stub
 		@SuppressWarnings("unused")
 		DataIngestion di = null;
-		di = new DataIngestion();
-		
+		di = new DataIngestion();		
 	}
 
 }
