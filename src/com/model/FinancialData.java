@@ -7,6 +7,20 @@ import java.util.ArrayList;
  * @since 31/12/2017
  */
 public class FinancialData {
+	
+	public float peRatio;
+	public float pcfRatio;
+	public float pbvRatio;
+	public float pegRatio;
+	public float ROCE;
+	public float ROE;
+	public float freeCashFlowYield;
+	public float debtEquityRatio;
+	public float debtFreeCashRatio;
+	public float computedGrowth;
+	public float enterpriseValue;
+	public float EBITToEVRatio;	
+	public String reutersRecommendation;	
 	public String company;
 	public String code;
 	public String outstandingNumberOfShares;
