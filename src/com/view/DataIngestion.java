@@ -21,28 +21,20 @@ public class DataIngestion {
 		IngestCompanyData icd = new IngestCompanyData(financials);
 		System.out.println("Company current data ingested!");
 		
-		/* Add assets */
+		/* Add historical data */
 		@SuppressWarnings("unused")
 		IngestHistoricalData iassets = new IngestHistoricalData(financials);
 		System.out.println("Historical data ingested!");
 		
-		/* Add Capital Expenditure */
-		/* Add Company Data */
-		/* Add Current Liabilities */
-		/* Add Current Yearly Quarterly Profits */
-		/* Add Current Yearly Quarterly Sales */
-		/* Add Debt */
-		/* Add Dividends */
-		/* Add EBIT */
-		/* Add Interest */
-		/* Add Net Profit */
-		/* Add Operating Cash Flow */
-		/* Add Previous Year Quarterly Profits */
-		/* Add Previous Year Quarterly Sales */
-		/* Add Revenues */
-		/* Add Share Holders Fund */
-		
-		
+		/* Add quarterly profits data */
+		@SuppressWarnings("unused")
+		IngestQuarterlyProfitsData quarterly_profits_data = new IngestQuarterlyProfitsData(financials);
+		System.out.println("Quarterly Profits data ingested!");
+	
+		/* Add quarterly sales data */
+		@SuppressWarnings("unused")
+		IngestQuarterlySalesData quarterly_sales_data = new IngestQuarterlySalesData(financials);
+		System.out.println("Quarterly Sales data ingested!");		
 		
 		DatabaseConnectionFactory factory = DatabaseConnectionFactory.getInstance();		
 		databaseConnection = factory.connection;		
