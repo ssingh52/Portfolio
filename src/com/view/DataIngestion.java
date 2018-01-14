@@ -1,9 +1,8 @@
-package controller;
+package com.view;
 
 import java.util.ArrayList;
 
-import com.factory.DataSetFactory;
-import com.factory.DatabaseConnectionFactory;
+import com.model.DataSetFactory;
 import com.model.FinancialData;
 
 public class DataIngestion {

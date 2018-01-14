@@ -1,9 +1,8 @@
-package controller;
+package com.view;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.factory.DatabaseConnectionFactory;
 import com.model.FinancialData;
 
 /**

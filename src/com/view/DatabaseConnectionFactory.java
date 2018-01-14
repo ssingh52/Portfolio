@@ -1,9 +1,7 @@
-package com.factory;
+package com.view;
 
 
 import java.sql.SQLException;
-
-import controller.ConnectToDatabase;
 public class DatabaseConnectionFactory {
 	
 	private static DatabaseConnectionFactory instance = null;

@@ -1,10 +1,8 @@
-package com.factory;
+package com.model;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
-import com.model.FinancialData;
 
 import controller.ReadFromFile;
 
@@ -16,11 +14,9 @@ public class DataSetFactory {
 			financialDataSet = new ArrayList<FinancialData>();			
 			String path = "F:/Personal/JavaApp/Data_Staging_Area";
 			
-			File folder = new File(path);
-			System.out.println(path);
+			File folder = new File(path);			
 			File[] listOfFiles = folder.listFiles();
-			for(File f:listOfFiles) {
-				System.out.println(f.getName());
+			for(File f:listOfFiles) {				
 				String p = path + "/" + f.getName();
 				ReadFromFile rff = null;
 				try {

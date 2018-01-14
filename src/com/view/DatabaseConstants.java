@@ -1,4 +1,4 @@
-package controller;
+package com.view;
 
 public class DatabaseConstants {
 

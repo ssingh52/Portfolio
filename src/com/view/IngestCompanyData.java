@@ -1,11 +1,10 @@
-package controller;
+package com.view;
 
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import com.factory.DatabaseConnectionFactory;
 import com.model.FinancialData;
 
 public class IngestCompanyData {
@@ -37,9 +36,8 @@ public class IngestCompanyData {
 				command = command + "'" + dt + "'" + ",";
 				command = command + null +",";
 				command = command + null;
-				command = command + ")";
+				command = command + ")";				
 				
-				System.out.println(command);
 				ConnectToDatabase.updateQuery(command);				
 			} else {
 								
