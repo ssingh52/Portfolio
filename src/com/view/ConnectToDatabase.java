@@ -9,6 +9,7 @@ import java.sql.Statement;
 public class ConnectToDatabase {
 	private static Connection con = null;
 	public static int rowSize;
+	public static ResultSet result_set;
 	public ConnectToDatabase(String username,String password) throws SQLException {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
@@ -26,6 +27,7 @@ public class ConnectToDatabase {
 		try {
 			Statement stmt = (Statement) con.createStatement();
 			ResultSet rs = stmt.executeQuery(sql_command);
+			result_set = rs;
 			rowSize = 0;
 			if(rs.next()) {
 				rowSize = rowSize + 1;

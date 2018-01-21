@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import controller.ReadFromFile;
+import com.controller.ReadFromFile;
 
 public class DataSetFactory {
 	public ArrayList<FinancialData> financialDataSet = null; 

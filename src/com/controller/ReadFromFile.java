@@ -1,4 +1,4 @@
-package controller;
+package com.controller;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
